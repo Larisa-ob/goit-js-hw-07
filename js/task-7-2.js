@@ -7,11 +7,14 @@ const ingredients = [
   "Приправы",
 ];
 const ulConteiner = document.querySelector("#ingredients");
-const array = [...ingredients];
-const elementRef = (array) =>
-  array.forEach((element) => {
+const headIn = document.createElement("h1");
+headIn.textContent = "Домашнее задание 7-2";
+ulConteiner.append(headIn);
+const array2 = [...ingredients];
+const elementRef = (array2) =>
+  array2.forEach((element) => {
     const list = document.createElement("li");
     list.textContent = element;
     ulConteiner.append(list);
   });
-elementRef(array);
+elementRef(array2);

@@ -1,9 +1,9 @@
 const titleItemsRef = document.querySelectorAll("#categories .item");
 console.log(`В списке ${titleItemsRef.length} категории`);
 const textItemsRef = document.querySelectorAll("h2");
-const array = [...textItemsRef];
-const textItems = (array) =>
-  array.forEach((element) => {
+const array1 = [...textItemsRef];
+const textItems = (array1) =>
+  array1.forEach((element) => {
     return (
       console.log(`.Категория ${element.textContent}`),
       console.log(
@@ -11,4 +11,4 @@ const textItems = (array) =>
       )
     );
   });
-textItems(array);
+textItems(array1);
