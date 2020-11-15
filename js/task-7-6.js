@@ -1,10 +1,18 @@
 const inputTextRef = document.querySelector("#validation-input");
-const name6LabelRef = document.querySelector();
 inputTextRef.addEventListener("input", (e) => {
   e.preventDefault();
-  const inputLength = e.target.value.length;
+  const inputdataLength = e.target.attributes["data-length"].nodeValue;
 });
-inputTextRef.addEventListener("blur", (e) => {
-  e.preventDefault();
-  console.log("Потерял фокус");
+/* При потере фокуса меняем цвет бордюра по условию*/
+inputTextRef.addEventListener("blur", (event) => {
+  event.preventDefault();
+  const inputLength = event.target.value.length;
+  const inputdataLength = event.target.attributes["data-length"].nodeValue;
+  if (inputLength <= inputdataLength) {
+    inputTextRef.classList.remove("invalid");
+    inputTextRef.classList.add("valid");
+  } else {
+    inputTextRef.classList.remove("valid");
+    inputTextRef.classList.add("invalid");
+  }
 });

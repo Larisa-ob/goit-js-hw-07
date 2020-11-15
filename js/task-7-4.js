@@ -19,11 +19,11 @@ const ref = {
 ref.buttonDecrement.addEventListener("click", (e) => {
   e.preventDefault();
   ref.decrement(); // не работает
-  ref.render(); //выводим значеие на страницу
+  ref.render(); //выводим значение на страницу
 });
 // обрабатываем событие нажатия на +1
 ref.buttonIncrement.addEventListener("click", (e) => {
   e.preventDefault();
   ref.increment(); // работает
-  ref.render(); //выводим значеие на страницу
+  ref.render(); //выводим значение на страницу
 });

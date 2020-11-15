@@ -20,13 +20,10 @@ const imgConteiner = document.querySelector("#gallery");
 const heading = document.createElement("h1");
 heading.textContent = "Домашнее задание 7-3";
 imgConteiner.append(heading);
-console.log(heading); // <h1>This is a heading</h1>
 const array3 = [...images];
 const imgRef = (array3) =>
   array3.forEach((element) => {
-    console.log(element);
     const list = document.createElement("img");
-    console.log(list);
     list.src = element.url;
     list.alt = element.alt;
     list.classList.add("js_picture");

@@ -19,3 +19,9 @@
 #validation-input.invalid {
   border-color: #f44336;
 }
+#text {
+  height: 20px;
+  width: 20px;
+  border-color: blue;
+  margin-left: 50px;
+}
